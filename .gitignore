@@ -1,0 +1,9 @@
+# Ignore zip builds — don't need to back up compiled packs
+*.zip
+
+# Texture-Packs.com watermark
+**/Texture-Packs.com.txt
+
+# OS junk
+.DS_Store
+Thumbs.db

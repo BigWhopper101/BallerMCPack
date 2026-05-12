@@ -1,0 +1,47 @@
+{
+  "bmc.swing": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/swing",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.returnbydeath": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/returnbydeath",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.rickroll": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/rickroll",
+        "stream": true
+      }
+    ]
+  },
+  "bmc.returnbydeathlonger": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/returnbydeathlonger",
+        "stream": false
+        }
+      ]
+    },
+  "bmc.bossmusic": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/bossmusic",
+        "stream": true
+        }
+      ]
+    }
+}
