@@ -7,3 +7,6 @@
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Pterodactyl API credentials (contains secret API key!)
+pterodactyl.env
