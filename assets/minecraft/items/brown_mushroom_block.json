@@ -1,0 +1,28 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "entries": [
+      {
+        "threshold": 9999.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/mana_block"
+        }
+      },
+      {
+        "threshold": 9998.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/deepslate_mana_block"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/brown_mushroom_block_inventory"
+    }
+  }
+}
+

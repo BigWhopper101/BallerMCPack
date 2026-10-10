@@ -43,5 +43,14 @@
         "stream": true
         }
       ]
+    },
+  "bmc.incident001": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/incident001",
+        "stream": true
+        }
+      ]
     }
 }

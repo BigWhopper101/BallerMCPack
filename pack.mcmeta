@@ -1,6 +1,8 @@
 {
   "pack": {
     "description": "BallerMC Pack",
-    "pack_format": 46
+    "pack_format": 46,
+    "min_format": [46, 0],
+    "max_format": [97, 1]
   }
 }
