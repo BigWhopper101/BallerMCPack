@@ -1,0 +1,77 @@
+{
+    "targets": {
+        "swap": {}
+    },
+    "passes": [
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "event_test:post/cine",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "minecraft:main"
+                }
+            ],
+            "output": "swap",
+            "uniforms": {
+                "CineConfig": [
+                    {
+                        "name": "Params",
+                        "type": "vec4",
+                        "value": [
+                            108.0,
+                            1.0,
+                            60.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "name": "Bars",
+                        "type": "vec4",
+                        "value": [
+                            0.115,
+                            0.115,
+                            0.0,
+                            0.5
+                        ]
+                    },
+                    {
+                        "name": "Timing",
+                        "type": "vec4",
+                        "value": [
+                            120.0,
+                            4.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "minecraft:post/blit",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "swap"
+                }
+            ],
+            "output": "minecraft:main",
+            "uniforms": {
+                "BlitConfig": [
+                    {
+                        "name": "ColorModulate",
+                        "type": "vec4",
+                        "value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

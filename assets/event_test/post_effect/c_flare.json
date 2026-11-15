@@ -1,0 +1,153 @@
+{
+    "targets": {
+        "small": {
+            "width": 8,
+            "height": 8
+        },
+        "mk": {
+            "width": 256,
+            "height": 256
+        },
+        "mkpos": {
+            "width": 1,
+            "height": 1
+        },
+        "swap": {}
+    },
+    "passes": [
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "event_test:post/brightpass2",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "minecraft:main",
+                    "bilinear": true
+                },
+                {
+                    "sampler_name": "MainDepth",
+                    "target": "minecraft:main",
+                    "use_depth_buffer": true
+                }
+            ],
+            "output": "small",
+            "uniforms": {
+                "FxConfig": [
+                    {
+                        "name": "Params",
+                        "type": "vec4",
+                        "value": [
+                            0.75,
+                            0.25,
+                            0.999,
+                            0.0
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "event_test:post/mkdown",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "minecraft:main"
+                }
+            ],
+            "output": "mk",
+            "uniforms": {
+                "FxConfig": [
+                    {
+                        "name": "Params",
+                        "type": "vec4",
+                        "value": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "event_test:post/mkfind",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "mk"
+                },
+                {
+                    "sampler_name": "In2",
+                    "target": "minecraft:main"
+                }
+            ],
+            "output": "mkpos",
+            "uniforms": {}
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "event_test:post/flarecomp",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "minecraft:main"
+                },
+                {
+                    "sampler_name": "Flare",
+                    "target": "small"
+                },
+                {
+                    "sampler_name": "Mk",
+                    "target": "mk"
+                },
+                {
+                    "sampler_name": "MkPos",
+                    "target": "mkpos"
+                }
+            ],
+            "output": "swap",
+            "uniforms": {
+                "FxConfig": [
+                    {
+                        "name": "Params",
+                        "type": "vec4",
+                        "value": [
+                            0.75,
+                            1.0,
+                            1.0,
+                            0.0
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "vertex_shader": "minecraft:core/screenquad",
+            "fragment_shader": "minecraft:post/blit",
+            "inputs": [
+                {
+                    "sampler_name": "In",
+                    "target": "swap"
+                }
+            ],
+            "output": "minecraft:main",
+            "uniforms": {
+                "BlitConfig": [
+                    {
+                        "name": "ColorModulate",
+                        "type": "vec4",
+                        "value": [
+                            1.0,
+                            1.0,
+                            1.0,
+                            1.0
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

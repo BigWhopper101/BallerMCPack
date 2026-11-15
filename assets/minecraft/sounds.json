@@ -32,25 +32,178 @@
       {
         "name": "custom/returnbydeathlonger",
         "stream": false
-        }
-      ]
-    },
+      }
+    ]
+  },
   "bmc.bossmusic": {
     "category": "master",
     "sounds": [
       {
         "name": "custom/bossmusic",
         "stream": true
-        }
-      ]
-    },
+      }
+    ]
+  },
   "bmc.incident001": {
     "category": "master",
     "sounds": [
       {
         "name": "custom/incident001",
         "stream": true
-        }
-      ]
-    }
+      }
+    ]
+  },
+  "bmc.reactor_hum_control": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_hum_control",
+        "stream": true
+      }
+    ]
+  },
+  "bmc.reactor_hum_core": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_hum_core",
+        "stream": true
+      }
+    ]
+  },
+  "bmc.reactor_hum_mask": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_hum_mask",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.reactor_startup": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_startup",
+        "stream": true
+      }
+    ]
+  },
+  "bmc.reactor_shutdown": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_shutdown",
+        "stream": true
+      }
+    ]
+  },
+  "bmc.reactor_alarm": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_alarm",
+        "stream": true
+      }
+    ]
+  },
+  "bmc.reactor_alarm2": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_alarm2",
+        "stream": true
+      }
+    ]
+  },
+  "bmc.reactor_clack": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_clack",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.reactor_clack_light": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_clack_light",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.reactor_beep": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_beep",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.reactor_beep_error": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_beep_error",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.reactor_geiger": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_geiger",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.reactor_rumble": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_rumble",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.reactor_explosion": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/reactor_explosion",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.st_key": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/st_key",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.st_reset": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/st_reset",
+        "stream": false
+      }
+    ]
+  },
+  "bmc.st_title": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "custom/st_title",
+        "stream": false
+      }
+    ]
+  }
 }
