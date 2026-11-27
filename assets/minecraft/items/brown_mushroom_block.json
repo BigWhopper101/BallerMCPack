@@ -31,6 +31,13 @@
           "type": "minecraft:model",
           "model": "minecraft:block/nether_mana_ore"
         }
+      },
+      {
+        "threshold": 9995.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:block/spell_workstation"
+        }
       }
     ],
     "fallback": {

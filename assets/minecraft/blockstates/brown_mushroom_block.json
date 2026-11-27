@@ -7,7 +7,7 @@
       "model": "minecraft:block/nether_mana_ore"
     },
     "down=false,east=false,north=false,south=false,up=true,west=false": {
-      "model": "minecraft:block/brown_mushroom_block_inventory"
+      "model": "minecraft:block/spell_workstation"
     },
     "down=false,east=false,north=false,south=false,up=true,west=true": {
       "model": "minecraft:block/brown_mushroom_block_inventory"
